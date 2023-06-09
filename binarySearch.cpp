@@ -5,7 +5,7 @@ int main()
     int a[50],n,key,mid;
     cout<<"Enter number of elements of array:"<<endl;
     cin>>n;
-    cout<<"Enter array elements:"<<endl;
+    cout<<"Enter array elements in sorted order:"<<endl;
     for(int i=0;i<n;i++){
         cin>>a[i];
     }
@@ -13,9 +13,9 @@ int main()
     cin>>key;
     int low=0,high=(n-1);
     while(high>=low){
-        mid=(low+high)/2;
+        mid=low+(high-low)/2;
         if(key==a[mid]){
-            cout<<"Elements present at index:"<<mid+1<<endl;
+            cout<<"Elements present at index:"<<mid<<endl;
             exit(0);
         }
         else if(a[mid]>key){
