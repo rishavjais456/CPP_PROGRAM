@@ -1,0 +1,1 @@
+class ford:public vehicle{
