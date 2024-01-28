@@ -3,7 +3,7 @@
 using namespace std;
 void CountSort(vector<int>&v){
     int n=v.size();
-    int maxe=-1;
+    int maxe=INT_MIN;
     for(int i=0;i<n;i++){
         maxe=max(v[i],maxe);
     }
